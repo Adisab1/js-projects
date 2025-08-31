@@ -8,5 +8,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AditProg/html-js-HUXN-projects.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AditProg/html-js-HUXN-projects/issues"
+  },
+  "homepage": "https://github.com/AditProg/html-js-HUXN-projects#readme",
   "description": ""
 }
