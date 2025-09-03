@@ -10,10 +10,13 @@ body {
 
 .container {
   position: relative;
-  width: 800px;
-  height: 500px;
+  width: 1800px;
+  height: 800px;
   background: #222;
   overflow: hidden;
+  border-radius: 10px;
+  border-color: yellowgreen;
+  border-style: double;
 }
 
 .clip {
