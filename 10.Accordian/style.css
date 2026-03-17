@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(black, blueviolet);
+  font-family: sans-serif;
+}
+
+#accordion {
+  width: 700px;
+  margin: 50px auto;
+}
+
+#accordion li {
+  list-style: none;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Label (title) */
+#accordion li label {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+#accordion li label:hover {
+  background: #f0f0f0;
+}
+
+/* Arrow span */
+#accordion li label span {
+  transition: transform 0.3s ease;
+  font-size: 20px;
+}
+
+/* Hide radio buttons */
+#accordion input[type="radio"] {
+  display: none;
+}
+
+/* Content section */
+#accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  background: #f9f9f9;
+  transition:
+    max-height 0.4s ease,
+    padding 0.4s ease;
+  padding: 0 15px;
+  line-height: 1.6;
+}
+
+/* Show content when checked */
+#accordion input[type="radio"]:checked ~ .content {
+  max-height: 250px; /* adjust if your content is longer */
+  padding: 15px;
+}
+
+/* Rotate arrow when active */
+#accordion input[type="radio"]:checked + label span {
+  transform: rotate(90deg);
+}
