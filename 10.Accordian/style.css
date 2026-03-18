@@ -12,6 +12,7 @@ body {
 #accordion {
   width: 700px;
   margin: 50px auto;
+  height: 1700px;
 }
 
 #accordion li {
@@ -37,7 +38,7 @@ body {
 }
 
 #accordion li label:hover {
-  background: #f0f0f0;
+  background: gold;
 }
 
 /* Arrow span */

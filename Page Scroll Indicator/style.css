@@ -1,0 +1,61 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+  min-height: 100vh;
+  background: grey;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Content spacing */
+.content {
+  padding: 4rem;
+}
+
+/* Sections */
+section {
+  border: 2px solid white;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+section h1 {
+  margin: 10px 0;
+}
+
+/* Scroll bar container */
+.scroll-indicator {
+  position: fixed;
+  top: 10px;
+  left: 3rem;
+  width: calc(100% - 6rem);
+  height: 6px;
+  background-color: #444;
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Progress bar */
+.scroll-indicator .progress {
+  height: 100%;
+  width: 0%;
+  transition: width 0.2s ease;
+
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
