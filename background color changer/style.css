@@ -1,0 +1,46 @@
+/* Body styling */
+body {
+  background-color: goldenrod; /* initial color */
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease; /* smooth color change */
+  font-family: Arial, sans-serif;
+}
+
+/* Hex code display */
+.hexcode {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+  transition: color 0.3s ease; /* optional: smooth color change */
+}
+
+/* Button styling */
+.btn {
+  padding: 12px 24px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    transform 0.1s;
+}
+
+/* Hover effect */
+.btn:hover {
+  color: black; /* text color change */
+  background: white; /* button background change */
+}
+
+/* Active / pressed effect */
+.btn:active {
+  transform: scale(0.95); /* button press animation */
+}
