@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Fill Animation</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(7, 7, 20);
+      }
+
+      :root {
+        --main-color: red;
+      }
+
+      /* HEART BASE (gray initially) */
+      .heart {
+        width: 100px;
+        height: 90px;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .heart::before,
+      .heart::after {
+        content: "";
+        position: absolute;
+        width: 52px;
+        height: 80px;
+        background-color: gray;
+        border-radius: 52px 52px 0 0;
+      }
+
+      .heart::before {
+        top: 0;
+        left: 50px;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+      .heart::after {
+        top: 0;
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+
+      /* RED HEART POP */
+      .red-heart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 90px;
+        opacity: 0;
+        z-index: 1;
+        transform-origin: center center;
+      }
+
+      .red-heart::before,
+      .red-heart::after {
+        content: "";
+        position: absolute;
+        width: 52px;
+        height: 80px;
+        background-color: var(--main-color);
+        border-radius: 52px 52px 0 0;
+      }
+
+      .red-heart::before {
+        top: 0;
+        left: 50px;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+      .red-heart::after {
+        top: 0;
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+
+      .red-heart.animation {
+        animation: pop 0.5s linear forwards;
+        opacity: 1;
+      }
+
+      @keyframes pop {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1.2);
+          opacity: 0;
+        }
+      }
+
+      .heart.filled::before,
+      .heart.filled::after {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heart">
+      <div class="red-heart"></div>
+    </div>
+
+    <script>
+      const heart = document.querySelector(".heart");
+      const redHeart = document.querySelector(".red-heart");
+
+      heart.addEventListener("click", () => {
+        if (heart.classList.contains("filled")) {
+          heart.classList.remove("filled");
+        } else {
+          // Reset animation
+          redHeart.classList.remove("animation");
+          void redHeart.offsetWidth; // force reflow
+          // Play pop animation
+          redHeart.classList.add("animation");
+
+          // After animation ends, turn gray heart into red
+          redHeart.addEventListener(
+            "animationend",
+            () => {
+              heart.classList.add("filled");
+            },
+            { once: true },
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
