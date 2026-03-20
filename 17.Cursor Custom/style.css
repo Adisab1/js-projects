@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(blue, yellow);
+  color: white;
+  font-family: "Playfair", serif;
+  cursor: none; /* hide default mouse cursor */
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+p {
+  font-size: 1.5rem;
+  color: gold;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 1.5rem;
+  background: transparent;
+  border: 2px solid antiquewhite;
+  color: antiquewhite;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: greenyellow;
+}
+
+/* Custom cursor */
+.cursor {
+  cursor: pointer;
+  position: fixed; /* crucial: fixed keeps it independent */
+  top: 0;
+  left: 0;
+  /* size and style of the custom cursor */
+  color: white;
+  width: 15px;
+  height: 15px;
+  background: goldenrod;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
