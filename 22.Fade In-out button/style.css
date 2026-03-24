@@ -30,8 +30,8 @@ h1 {
   margin-top: 50px;
   color: wheat;
   text-align: center;
-  font-size: 4 rem;
-  margin-bottom: 6 rem;
+  font-size: 4rem;
+  margin-bottom: 6rem;
 }
 .arrow {
   width: 45px;
@@ -56,28 +56,23 @@ h1 {
 
   transform: rotate(-45deg);
 }
+h1 {
+  font-size: 4rem;
+  margin-bottom: 6rem;
+}
+
 @keyframes bounce {
   0% {
-    transform: translate(0);
+    transform: translateY(0);
   }
   20% {
-    transform: translate(15x);
+    transform: translateY(15px);
   }
   40% {
-    transform: translate(0);
+    transform: translateY(0);
   }
 }
-@-webkit-keyframes bounce {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(15x);
-  }
-  40% {
-    transform: translate(0);
-  }
-}
+
 .fade-in {
   opacity: 1;
   transition: 1s all ease-in;
