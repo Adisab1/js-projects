@@ -9,7 +9,8 @@ body {
 #emoji {
   font-size: 10rem;
   filter: grayscale(1);
-  transition-property: transform, filter;
+  transition-property:
+    transform, filter; /*smoothes transition of both transform and filter properties*/
   transition-duration: 0.2s;
   cursor: pointer;
 }
