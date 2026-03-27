@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="content-container">
+        <h1>Welcome to the Real World of Pop-Up Forms!</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, natus.
+        </p>
+
+        <button class="cta-btn" id="open">Sign Up</button>
+      </div>
+    </header>
+
+    <!-- MODAL -->
+    <section class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">&times;</button>
+
+        <div class="modal-content">
+          <h2>Sign Up</h2>
+
+          <form class="modal-form">
+            <div>
+              <label>Name</label>
+              <input type="text" class="form-input" />
+            </div>
+
+            <div>
+              <label>Email</label>
+              <input type="email" class="form-input" />
+            </div>
+
+            <div>
+              <label>Password</label>
+              <input type="password" class="form-input" />
+            </div>
+
+            <div>
+              <label>Confirm Password</label>
+              <input type="password" class="form-input" />
+            </div>
+
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
