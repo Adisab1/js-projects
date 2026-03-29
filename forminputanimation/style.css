@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+.container {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.special {
+  background: chocolate;
+  padding: 5px;
+  color: white;
+}
+.form-control {
+  position: relative;
+  margin: 20px 0 5px 0;
+  width: 300px;
+}
+.form-control input {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid black;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+}
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: chocolate;
+}
+.btn {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  width: 100%;
+  background: crimson;
+  font-family: inherit;
+  font-size: 16px;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.form-control label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: black;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  transition: 0.2s ease all;
+  min-width: 5px;
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  transform: translateY(-30px);
+  color: chocolate;
+}
