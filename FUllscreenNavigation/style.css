@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #000;
+}
+
+/* Images */
+.image-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  border: #000 solid 2px;
+}
+
+.img-one {
+  background-image: url(images/6536956.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-two {
+  background-image: url(images/atharva-tulsi-6ftd4RgUdnk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Content */
+.container {
+  padding: 0 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  padding: 20px 0;
+}
+
+article h1 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.para {
+  max-width: 700px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6; /* FIXED */
+}
+
+/* Menu */
+.menu {
+  position: fixed; /* keep fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+
+  background-color: blue;
+
+  /* FIXED calc spacing */
+  clip-path: circle(20px at calc(100vw - 5vw) 31px);
+  transition: clip-path 0.5s;
+
+  z-index: 3;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+/* Button */
+.btn {
+  position: absolute;
+  top: 20px;
+
+  /* FIXED calc */
+  left: calc(100vw - 5vw);
+  transform: translateX(-50%);
+
+  cursor: pointer;
+}
+
+.btn > span {
+  width: 6px; /* improved */
+  height: 6px;
+  border: 2px solid red;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Highlight */
+/* ✅ PERFECT highlight */
+.highlight {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+
+  background: gold;
+  border-radius: 6px;
+  opacity: 0.5;
+
+  z-index: 1;
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
