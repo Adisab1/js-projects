@@ -11,7 +11,7 @@ let pageIndex = 0;
 toggleBtn.addEventListener("click", () => {
   toggleBtn.classList.toggle("active");
   container.classList.toggle("active"); // enable/disable 3D effect
-  ul.classList.toggle("show");
+  ul.classList.toggle("show"); // show/hide menu
 });
 
 // Function to switch pages

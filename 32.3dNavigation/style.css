@@ -171,7 +171,7 @@ body {
 
 .link:hover {
   color: #00f;
-  transform: translateX(-10px);
+  transform: translateX(-20px);
 }
 
 /* Overlay Animation */

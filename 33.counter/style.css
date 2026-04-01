@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  border: none;
+  outline: none;
+}
+body {
+  font-family: sans-serif;
+  background-color: gainsboro;
+}
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10rem;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.counter-box {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  background-color: blue;
+  border-radius: 10px;
+}
+.button {
+  width: 80%;
+  max-width: 400px;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+.increment-btn {
+  margin: 2em 0 1em 0;
+  background-color: green;
+  font-weight: bold;
+}
+.save-btn {
+  margin: 2em 0 1em 0;
+  background-color: rgb(0, 255, 255);
+  font-weight: bold;
+}
+.enteries p {
+  margin: 2em 0 1em 0;
+  color: goldenrod;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: brown wavy underline;
+}
+
+.enteries-field {
+  font-size: large;
+  color: black;
+  font-weight: bold;
+}
