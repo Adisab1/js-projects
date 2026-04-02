@@ -23,6 +23,8 @@ body {
 
   font-size: 2rem;
   font-weight: bold;
+
+  margin-bottom: 30px;
 }
 
 .input-container {
@@ -86,4 +88,8 @@ p {
 }
 .lowercase {
   text-transform: lowercase;
+}
+
+.clear {
+  text-transform: none;
 }

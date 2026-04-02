@@ -13,16 +13,18 @@ buttons.forEach((btn) => {
     } else if (btn.classList.contains("lowercase")) {
       outputField.innerHTML = outputField.innerHTML.toLowerCase();
     } else if (btn.classList.contains("bold")) {
-      outputField.style.fontWeight = "bold";
+      outputField.style.fontWeight = "900";
     } else if (btn.classList.contains("capitalize")) {
-      outputField.innerHTML = outputField.innerHTML
-        .split(" ")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
+      outputField.innerHTML =
+        outputField.innerHTML.charAt(0).toUpperCase() +
+        outputField.innerHTML.slice(1).toLowerCase();
     } else if (btn.classList.contains("underline")) {
       outputField.style.textDecoration = "underline";
     } else if (btn.classList.contains("italic")) {
       outputField.style.fontStyle = "italic";
+    } else if (btn.classList.contains("clear")) {
+      outputField.innerHTML = "";
+      inputField.value = "";
     }
   });
 });
