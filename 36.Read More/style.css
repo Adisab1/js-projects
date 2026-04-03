@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  color: gray;
+}
+
+.container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 50%;
+}
+header h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}
+.para {
+  margin-top: 12px;
+  color: yellowgreen;
+}
+.para .content-container-2 {
+  display: none;
+}
+.btn {
+  background-color: yellowgreen;
+  padding: 10px;
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.content-container-2.toggle {
+  display: block;
+}
