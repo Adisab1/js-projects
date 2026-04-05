@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  text-align: center;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.quote-container {
+  padding: 5rem;
+  position: relative;
+}
+#quoteOutput {
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  line-height: 50px;
+  margin-top: 2rem;
+  width: 800px;
+}
+
+#authorOutput {
+  position: relative;
+
+  margin-top: 5rem;
+  text-align: right;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+span,
+small {
+  animation: 2s anime 1s ease-out;
+}
+.btn {
+  padding: 10px 30px;
+  background-color: orchid;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
