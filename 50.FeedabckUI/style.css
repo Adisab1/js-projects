@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.panel-container {
+  background-color: aliceblue;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  font-size: 90%;
+  color: black;
+}
+
+.ratings-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+
+  text-align: center;
+}
+
+.rating {
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+}
+
+.rating:hover,
+.rating.active {
+  background-color: lightblue;
+  transition: 1s ease;
+  border-radius: 10px;
+  transition: 0.1s ease;
+}
+
+.rating .icon {
+  width: 40px;
+  font-size: 4rem;
+  margin: 10px 10px 10px 10px;
+}
+.rating small {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  outline: none;
+  font-size: 1rem;
+  border: 1px solid goldenrod;
+}
+.btn:active {
+  transform: scale(0.95);
+  transition: 0.1s ease;
+}
+
+/* js classes */
+.heart {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.thank {
+  margin: 10px 0;
+  color: yellowgreen;
+}
+
+.feedback {
+  color: teal;
+  font-size: 16px;
+  text-decoration: underline dotted;
+  text-underline-offset: 4px;
+}

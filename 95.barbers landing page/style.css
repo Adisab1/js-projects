@@ -1,0 +1,299 @@
+:root {
+  --main-color: #37132d;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  color: black;
+
+  background-color: aliceblue;
+}
+
+ul li {
+  padding: 20px;
+  display: inline;
+}
+ul li a {
+  text-decoration: none;
+  margin: 10px;
+  font-family: sans-serif;
+}
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.header-heading {
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+
+.header-sub-headings {
+  width: 70%;
+  font-family: sans-serif;
+  color: rgb(82, 82, 82);
+  margin: 20px;
+}
+
+.header-img-container {
+  width: 30%;
+
+  height: 50vh;
+  position: relative;
+}
+.header-img {
+  width: 200px;
+  height: 300px;
+}
+
+.img-one {
+  position: absolute;
+  left: 10rem;
+}
+
+.img-two {
+  position: absolute;
+  left: 3rem;
+
+  top: 8rem;
+}
+
+.main-btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  background: var(--main-color);
+  color: white;
+  font-family: sans-serif;
+}
+.experience {
+  margin-top: 10rem;
+  height: 90vh;
+  margin-left: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.experience-img {
+  background: url("eugene-chystiakov-taZSJ6xmt48-unsplash.jpg");
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+  margin-left: 50px;
+}
+.gray-heading {
+  color: black;
+  font-family: sans-serif;
+}
+
+.btn-container {
+  margin-top: 30px;
+}
+.social-media {
+  margin: 5rem;
+}
+
+.sm-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.follow {
+  padding: 20px;
+  background: var(--main-color);
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-right: 3rem;
+  text-align: center;
+}
+.hero {
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-img-container {
+  background: url("albert-dera-ILip77SbmOE-unsplash.jpg");
+  background-size: cover;
+  background-position: top;
+  width: 300px;
+  height: 400px;
+}
+
+.hero-sub-headings {
+  width: 400px;
+}
+
+.hero-content {
+  margin-left: 6rem;
+}
+
+.services {
+  margin-top: 10rem;
+}
+
+.services-g-heading {
+  margin-left: 5rem;
+}
+
+.services-heading {
+  margin-left: 5rem;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+
+  margin: 20px;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: top;
+}
+
+.img-one {
+  background-image: url("john-arano-CCTCHXEsan8-unsplash.jpg");
+}
+
+.img-two {
+  background-image: url("allef-vinicius-IvQeAVeJULw-unsplash.jpg");
+}
+
+.img-three {
+  background-image: url("christoffer-engstrom-1ouGlRChSbY-unsplash.jpg");
+}
+.card-content {
+  transform: translateY(200px);
+  text-align: center;
+  margin: 10px;
+}
+
+.card-title {
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: black;
+}
+.card-info {
+  font-family: serif;
+  color: rgb(109, 109, 109);
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.footer {
+  background: var(--main-color);
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  color: white;
+  height: 30vh;
+  margin-top: 10rem;
+}
+
+.footer-card-title {
+  font-family: sans-serif;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-decoration: dashed underline red;
+}
+
+.footer-car-info {
+  font-family: serif;
+  line-height: 2rem;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .header-content {
+    align-items: center;
+    text-align: center;
+    width: 70%;
+  }
+
+  .header-img-container {
+    display: none;
+  }
+  .experience {
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .experience-headings {
+    font-size: 3rem;
+  }
+  .experience-sub-headings {
+    text-align: center;
+
+    margin: 0 auto;
+  }
+
+  .btn-container {
+    margin-top: 30px;
+    margin-bottom: 3rem;
+  }
+
+  .follow {
+    display: none;
+  }
+
+  .sm-container {
+    flex-direction: column;
+  }
+  .list-items {
+    margin: 10px;
+  }
+  .list-items {
+    margin: 10px;
+  }
+}

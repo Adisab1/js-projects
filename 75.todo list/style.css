@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(184, 51, 77);
+  font-family: sans-serif;
+}
+.container {
+  width: 400px;
+  padding: 2em;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  gap: 0.5em;
+}
+
+input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: rgb(184, 51, 77);
+}
+
+button {
+  padding: 12px 20px;
+  background-color: rgb(184, 51, 77);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition:
+    background-color 0.3s ease,
+    transform 0.1s ease;
+}
+
+button:hover {
+  background-color: rgb(150, 40, 60);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.output {
+  margin-top: 2em;
+}
+
+/*js*/
+.todo {
+  border-left: 5px solid rgb(34, 187, 51);
+  color: rgb(50, 50, 50);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 0.8em;
+  font-size: 1em;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.todo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.todo span:first-child {
+  flex: 1;
+  word-break: break-word;
+}
+
+.delete {
+  color: rgb(223, 71, 89);
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+}
+
+.delete:hover {
+  background-color: rgba(223, 71, 89, 0.1);
+  color: rgb(180, 50, 70);
+}
+
+.message-container {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  visibility: hidden;
+  transform: translateX(-400px);
+  transition: transform 0.4s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.success {
+  transform: translateX(0);
+  visibility: visible;
+  background-color: rgb(34, 187, 54);
+  color: white;
+}
+
+.error {
+  transform: translateX(0);
+  visibility: visible;
+  background-color: rgb(223, 71, 89);
+  color: white;
+}

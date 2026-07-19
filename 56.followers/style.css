@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.card {
+  border: 2px solid forestgreen;
+  padding: 20px;
+  width: 30%;
+  height: 30%;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 5px 2px;
+  transform: scale(1.2);
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+.fa-brands {
+  font-size: 2rem;
+}
+
+.followers {
+  font-size: 5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.fa-facebook {
+  color: blue;
+}
+.fa-youtube {
+  color: red;
+}

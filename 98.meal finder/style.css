@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+/* SEARCH INPUT */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50px;
+  width: 300px;
+  height: 50px;
+  position: relative;
+  transition: width 0.5s ease;
+}
+
+.input-container:focus-within {
+  width: 400px;
+}
+
+.input {
+  margin: 0 20px;
+  width: 100%;
+  color: #ff6e00;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+/* SEARCH ICON */
+.magnifier {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  color: #ff6e0a;
+}
+
+/* NAV LIST */
+ul li {
+  display: inline;
+  margin-left: 40px;
+  font-family: sans-serif;
+}
+
+/* MAIN SECTION */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENT BOX */
+.container {
+  width: 70%;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* TEXT CONTENT */
+.content-container h1 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+
+.content-container p {
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: #444;
+  max-width: 26rem;
+}
+
+/* IMAGE */
+.img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: url("ivan-torres-MQUqbmszGGM-unsplash.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* INGREDIENTS SECTION */
+.ingredients {
+  width: 80%;
+  margin: 5rem auto;
+  padding: 50px;
+}
+
+.ingredients ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.ing {
+  padding: 10px 20px;
+  border: 2px solid #ff6e0a;
+  color: #000;
+  font-family: sans-serif;
+  border-radius: 100px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img {
+    margin-top: 2rem;
+  }
+
+  .input-container {
+    width: 250px;
+  }
+
+  .input-container:focus-within {
+    width: 300px;
+  }
+}
+button {
+  background: transparent;
+  border: 2px salmon solid;
+  cursor: pointer;
+  color: #000;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 100px;
+  background-color: lightgreen;
+}

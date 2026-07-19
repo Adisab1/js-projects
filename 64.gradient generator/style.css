@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+#gradient-cont {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#ff0000, #0000ff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.colors {
+  width: 100px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.randomColorBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.randomColorBtn:hover {
+  background: #444;
+}

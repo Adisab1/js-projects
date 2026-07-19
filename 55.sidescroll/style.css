@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* LEFT SIDE */
+.left-slid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Each slide */
+.left-slid > div {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-slid h1 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+/* RIGHT SIDE */
+.right-slid {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Each image slide */
+.right-slid > div {
+  height: 100vh;
+  width: 100%;
+}
+
+/* BUTTONS */
+.buttons-container button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 10;
+}
+
+button {
+  border: 2px solid gold;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 2rem;
+  background: white;
+}
+
+/* Button positions */
+#down-btn {
+  transform: translateX(-100%);
+}
+
+#up-btn {
+  transform: translateY(-100%);
+}
+
+/* LEFT SIDE COLORS */
+.game-one {
+  background-color: aliceblue;
+}
+.game-two {
+  background-color: gray;
+}
+.game-three {
+  background-color: yellow;
+}
+.game-four {
+  background-color: orange;
+}
+
+/* RIGHT SIDE IMAGES */
+.img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-one {
+  background-image: url("behnam-mohsenzadeh-lJjQ3BsxvG8-unsplash.jpg");
+}
+.img-two {
+  background-image: url("addy-spartacus-kP-idOo5Omk-unsplash.jpg");
+}
+.img-three {
+  background-image: url("bradley-pelish-NPivaRqGFWw-unsplash.jpg");
+}
+.img-four {
+  background-image: url("darklabs-india-cDxMcejWKn0-unsplash.jpg");
+}

@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: black;
+  padding-bottom: 50px;
+}
+.container {
+  margin: 0 auto;
+  height: 100px;
+  width: 90%;
+}
+
+.nav {
+  position: fixed;
+  background-color: grey;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+  transition: all 0.3s ease;
+}
+
+.nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 3px 3px;
+  transition: all 0.3s ease;
+}
+.logo {
+  margin-left: 20px;
+  color: white;
+}
+
+.nav.active {
+  background-color: white;
+  color: black;
+}
+.nav.active a {
+  color: black;
+}
+.hero {
+  background-image: url("alex-azabache--Hm_xIcYbUY-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom-centre;
+  height: 100vh;
+  color: white;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  z-index: -2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 20px;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+.content {
+  max-width: 600px;
+
+  background: rgb(230, 229, 229);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.content h2 {
+  margin-bottom: 10px;
+  color: #444444;
+}
+.content p {
+  color: #555555;
+  line-height: 1.6;
+}

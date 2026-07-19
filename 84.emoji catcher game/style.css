@@ -1,0 +1,72 @@
+body {
+  background-color: lightsalmon;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* SCORE + TIMER */
+.scores-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.total-score,
+.time {
+  text-align: center;
+  background-color: #ccc;
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+  min-width: 120px;
+  font-weight: bold;
+}
+
+/* GRID WRAPPER */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* GRID */
+.grid {
+  width: 650px;
+  height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 36, 36);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/* SQUARES */
+.square {
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  background: rgb(61, 61, 61);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  position: relative;
+}
+
+/* hover effect */
+.square:hover {
+  transform: scale(1.05);
+}
+
+/* ACTIVE EMOJI */
+.emoji {
+  background-image: url("https://i.pinimg.com/736x/4b/93/6a/4b936a1e1d9d1e8275f29532d3d2e709.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid yellow;
+}

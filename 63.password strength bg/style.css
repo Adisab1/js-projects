@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  width: 40%;
+  height: 40%;
+  background: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+input {
+  padding: 10px 20px;
+  width: 80%;
+  padding: 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.background-image {
+  background-image: url("alex-azabache--Hm_xIcYbUY-unsplash.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  z-index: -1;
+  filter: blur(20px);
+}

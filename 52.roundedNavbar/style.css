@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62%;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 30rem;
+  height: 30rem;
+  background-color: #fd7272;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  transform: scale(0) rotate(-180deg);
+  transition: transform 0.5s ease;
+
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* ACTIVE STATE */
+.change .navbar {
+  transform: scale(1) rotate(0);
+}
+
+.navbar-link {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.navbar-link i {
+  font-size: 3rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+/* HOVER EFFECT */
+.navbar-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.navbar-link:hover i {
+  color: red;
+}
+
+/* POSITIONING ICONS IN CIRCLE */
+.navbar-link:nth-child(1) {
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-link:nth-child(2) {
+  top: 5rem;
+  right: 2rem;
+}
+
+.navbar-link:nth-child(3) {
+  bottom: 5rem;
+  right: 2rem;
+}
+
+.navbar-link:nth-child(4) {
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-link:nth-child(5) {
+  bottom: 6rem;
+  left: 2rem;
+}
+
+.navbar-link:nth-child(6) {
+  top: 6rem;
+  left: 2rem;
+}
+/* 
+.navbar-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+
+.navbar-link:nth-child(1) {
+  transform: rotate(0deg) translateY(-8rem);
+}
+
+.navbar-link:nth-child(2) {
+  transform: rotate(60deg) translateY(-8rem);
+}
+
+.navbar-link:nth-child(3) {
+  transform: rotate(120deg) translateY(-8rem);
+}
+
+.navbar-link:nth-child(4) {
+  transform: rotate(180deg) translateY(-8rem);
+}
+
+.navbar-link:nth-child(5) {
+  transform: rotate(240deg) translateY(-8rem);
+}
+
+.navbar-link:nth-child(6) {
+  transform: rotate(300deg) translateY(-8rem);
+}
+*/
+
+/* BUTTON */
+.navbar-btn {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar-btn i {
+  font-size: 2rem;
+  color: white;
+  transition: transform 0.5s;
+  font-weight: bolder;
+}
+
+/* FIXED TYPO HERE */
+.change .navbar-btn i {
+  transform: rotate(45deg);
+}

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column; /* important */
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+
+/* Search box */
+#searchBox {
+  width: 100%;
+  max-width: 600px;
+
+  display: flex;
+  gap: 10px; /* better than margin */
+}
+
+/* Input */
+#input {
+  flex: 1; /* takes remaining space */
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+/* Button */
+#searchBtn {
+  padding: 0 20px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Content */
+.content-container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* Highlight */
+mark {
+  background: red;
+  color: white;
+}
