@@ -153,3 +153,11 @@ button {
 button:hover {
   background-color: #a3f0c4;
 }
+@media (max-width: 600px) {
+  .screen {
+    padding: 1rem;
+  }
+  #start-screen h1 {
+    font-size: 2rem;
+  }
+}

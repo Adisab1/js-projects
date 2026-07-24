@@ -3,26 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QUIZ GAME</title>
+    <title>Quiz Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <div class="container">
-      <!-- Start Screen -->
       <div class="screen active" id="start-screen">
-        <h1>QUIZ GAME</h1>
-        <p>Welcome to the QUIZ GAME!</p>
+        <h1>Quiz Time!</h1>
+        <p>Test your knowledge with these fun questions</p>
         <button id="start-btn">Start Quiz</button>
       </div>
 
-      <!-- Quiz Screen -->
       <div class="screen" id="quiz-screen">
         <div class="quiz-header">
-          <h2 id="question-text">QUESTION GOES HERE</h2>
+          <h2 id="question-text">Question goes here</h2>
           <div class="quiz-info">
             <p>
-              Question <span id="current-number">1</span> of
+              Question <span id="current-question">1</span> of
               <span id="total-questions">5</span>
             </p>
 
@@ -30,22 +27,25 @@
           </div>
         </div>
 
-        <div id="answers-container" class="answers-container"></div>
+        <div id="answers-container" class="answers-container">
+          <!-- Answer buttons will be insterted here from our js code later at some point -->
+        </div>
+
         <div class="progress-bar">
-          <div class="progress" class="progress"></div>
+          <div id="progress" class="progress"></div>
         </div>
       </div>
+
       <div id="result-screen" class="screen">
         <h1>Quiz Results</h1>
         <div class="result-info">
           <p>
-            You Scored: <span id="final-score">0</span> out of
+            You scored <span id="final-score">0</span> out of
             <span id="max-score">5</span>
           </p>
 
-          <div id="result-message">Good Job!</div>
+          <div id="result-message">Good job!</div>
         </div>
-
         <button id="restart-btn">Restart Quiz</button>
       </div>
     </div>

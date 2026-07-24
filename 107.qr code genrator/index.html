@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>QR Code Generator</h2>
+
+      <input
+        type="text"
+        id="qrText"
+        placeholder="Enter website URL (e.g. https://google.com)"
+      />
+
+      <button id="generateBtn">Generate QR Code</button>
+
+      <div id="imgBox">
+        <a id="qrLink" href="#" target="_blank">
+          <img id="qrImage" alt="QR Code" />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      const qrText = document.getElementById("qrText");
+      const qrImage = document.getElementById("qrImage");
+      const qrLink = document.getElementById("qrLink");
+      const imgBox = document.getElementById("imgBox");
+      const button = document.getElementById("generateBtn");
+
+      button.addEventListener("click", () => {
+        let text = qrText.value.trim();
+
+        if (text === "") {
+          alert("Please enter a website URL.");
+          return;
+        }
+
+        if (!text.startsWith("http://") && !text.startsWith("https://")) {
+          text = "https://" + text;
+        }
+
+        qrImage.src =
+          "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" +
+          encodeURIComponent(text);
+
+        qrLink.href = text;
+
+        qrImage.onload = function () {
+          imgBox.style.display = "block";
+        };
+      });
+
+      qrText.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          button.click();
+        }
+      });
+    </script>
+  </body>
+</html>
